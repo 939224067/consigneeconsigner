@@ -1,0 +1,148 @@
+#上传文件的路径，要带斜杠
+web:
+  upload-path: upload/
+server:
+  port: 40002
+  servlet:
+    context-path: ${SERVER_CONTEXTPATH:}
+spring:
+  profiles:
+    active: dev
+  mvc:
+    #静态资源，设置上传文件的访问，
+    static-path-pattern: /**
+  #    view:
+  #      suffix: .html
+  ##      prefix: /templates/
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/static,classpath:/resources/,classpath:/public/,file:${web.upload-path}
+
+  application:
+    name: WLTP-FLIGHT-CONSIGNEECONSIGNER
+
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+    #springboot2.0之后会把Date类型字段自动给转成UTC字符串 如：1990-11-26T16:00:00.000+0000，如果想转成时间戳在application.properties配置文件增加以下配置
+    date-format: yyyy-MM-dd HH:mm:ss
+    #时区必须要设置
+    time-zone: GMT+8
+    #ALWAYS的意思是即时属性为null，仍然也会输出这个key
+    default-property-inclusion: always
+
+  cloud:
+    #eureka主机名，会在控制页面中显示
+    #DEV环境关闭注册。
+    features:
+      enabled: true
+    discovery:
+      enabled: true
+    service-registry:
+      auto-registration:
+        enabled: true
+
+  #数据库连接
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: 110
+      password: QAHqCJf2kFYCLirM
+      url: jdbc:mysql://118.31.66.166:3306/CONSIGNEE_CONSIGNER?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+      initial-size: 10
+      max-active: 50
+      min-idle: 5
+      max-wait: 60000
+      # 开启缓存preparedStatement(PSCache)
+      pool-prepared-statements: true
+      # 启用PSCache后，指定每个连接上PSCache的大小
+      max-pool-prepared-statement-per-connection-size: 20
+      # 用来检测连接是否有效的sql
+      validation-query: select 'x'
+      # 申请连接时不检测连接是否有效
+      test-on-borrow: false
+      # 归还连接时不检测连接是否有效
+      test-on-return: false
+      # 申请连接时检测，如果空闲时间大于timeBetweenEvictionRunsMillis，执行validationQuery检测连接是否有效（不影响性能）
+      test-while-idle: true
+      # 检测连接的间隔时间，若连接空闲时间 >= minEvictableIdleTimeMillis，则关闭物理连接
+      time-between-eviction-runs-millis: 60000
+      # 连接保持空闲而不被驱逐的最小时间(ms)
+      min-evictable-idle-time-millis: 300000
+      # 配置监控统计拦截的filters（不配置则监控界面sql无法统计），监控统计filter:stat，日志filter:log4j，防御sql注入filter:wall
+      filters: stat,wall
+      # 支持合并多个DruidDataSource的监控数据
+      use-global-data-source-stat: true
+      # 通过connectProperties属性来打开mergeSql(Sql合并)功能；慢SQL记录(配置超过5秒就是慢，默认是3秒)
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+#eureka client
+eureka:
+  instance:
+    #eureka服务器页面中status的请求路径
+    status-page-url:  http://${eureka.instance.hostname}:${server.port}/index
+    prefer-ip-address: true
+    instance-id:  ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${spring.cloud.client.ip-address}
+  client:
+    register-with-eureka: true
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://192.168.1.53:12345/eureka/
+#      defaultZone: http://localhost:12345/eureka/
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.sunyo.wlpt.consigneeconsigner.model
+
+
+#debug配置,debug或者为true的时候，logback才会记录和写入日志文件
+trace: false
+debug: false
+
+logging:
+  file:
+    path: ./logs/
+    name: system.log
+  config: config/logback-dev.xml
+    #转移到logback配置文件中
+    #level:
+    #org.apache.tomcat: info
+    #com.tianbo.warehouse.dao: DEBUG
+  #org.springframework.security: trace
+  #日志配置,输出到文本，
+#Java Web Token 时效时间,单位秒
+jwt:
+  max-alive: 300
+
+#自定义配置
+custom:
+  #进港放行回执读取目录
+  receptDirectory: /Users/shenhailong/工作文档/仓库管理系统/20200812/test1
+  #回执解析成功后的备份目录
+  receptBakDir: #/Users/mrz/Downloads/rdp_temp/logs/success
+  #解析错误报文的备份目录
+  errBakDir: #/Users/mrz/Downloads/rdp_temp/logs/error
+  #回执转发目录
+  transmitDir: #/Users/mrz/Downloads/rdp_temp/logs/transmit
+  #匹配技术回执正则
+  delTechnologyReceptMatch: #CN_MT(.*)_1P0_460470678920X_(.*).xml
+  #报文导入生成目录,这个地方目录结尾要带/
+  extRedioMsgDir: #/Users/mrz/Downloads/rdp_temp/logs/transmit/
+  #系统类型 [windows,linux]转换换行符用来的判断
+  operationSystemType: windows
+devops:
+  dir:
+    singlewindow-tcs-recept: D:\TCSSingleWindow\recive
+    tianbo-tcs-recept: D:\Data\Receive
+    cfps-subscribe-dir: D:\系统部署\imf_Warehouse_reader\xmlFromImf
+#10079
+feign:
+  hystrix:
+    enabled: true

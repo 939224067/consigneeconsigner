@@ -1,0 +1,247 @@
+2020-09-20 16:07:14.442 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - The following profiles are active: dev
+2020-09-20 16:07:16.537 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7a90a502-bd22-3cc7-a350-990291bcd0ee
+2020-09-20 16:07:16.734 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a24f078c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:07:16.771 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$be690a89] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:07:17.196 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 40002 (http)
+2020-09-20 16:07:17.237 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-20 16:07:17.237 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-20 16:07:17.540 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-20 16:07:17.540 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3054 ms
+2020-09-20 16:07:17.730 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:07:17.748 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7ab2a07e
+2020-09-20 16:07:17.900 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-09-20 16:07:23.386 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-20 16:07:24.712 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:07:25.151 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:07:25.991 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-20 16:07:26.130 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-09-20 16:07:26.183 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-09-20 16:07:26.494 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-09-20 16:07:26.495 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-09-20 16:07:26.686 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-09-20 16:07:26.686 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-09-20 16:07:27.089 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-09-20 16:07:27.119 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-09-20 16:07:27.120 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-09-20 16:07:27.457 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-09-20 16:07:27.462 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-09-20 16:07:27.466 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-20 16:07:27.472 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1600589247469 with initial instances count: 3
+2020-09-20 16:07:27.477 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status UP
+2020-09-20 16:07:27.478 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1600589247478, current=UP, previous=STARTING]
+2020-09-20 16:07:27.575 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 40002 (http) with context path ''
+2020-09-20 16:07:27.577 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 40002
+2020-09-20 16:07:27.581 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - Started ConsigneeconsignerApplication in 15.113 seconds (JVM running for 17.763)
+2020-09-20 16:07:28.130 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-20 16:07:28.131 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-20 16:07:28.145 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:07:28.154 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+2020-09-20 16:07:28.202 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:12:27.126 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:17:27.140 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:18:05.419 [Thread-35] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status DOWN
+2020-09-20 16:18:05.465 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:18:05.475 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:18:05.475 [Thread-35] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:18:05.499 [Thread-35] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-20 16:18:05.505 [Thread-35] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-09-20 16:18:16.829 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - The following profiles are active: dev
+2020-09-20 16:18:18.401 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7a90a502-bd22-3cc7-a350-990291bcd0ee
+2020-09-20 16:18:18.541 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ccfff563] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:18:18.581 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e919f860] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:18:18.827 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 40002 (http)
+2020-09-20 16:18:18.854 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-20 16:18:18.854 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-20 16:18:19.122 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-20 16:18:19.122 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2273 ms
+2020-09-20 16:18:19.297 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:18:19.314 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6de7778f
+2020-09-20 16:18:19.460 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-09-20 16:18:25.422 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-20 16:18:26.145 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:18:26.316 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:18:26.811 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-20 16:18:26.903 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-09-20 16:18:26.932 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-09-20 16:18:27.094 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-09-20 16:18:27.094 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-09-20 16:18:27.226 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-09-20 16:18:27.226 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-09-20 16:18:27.435 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-09-20 16:18:27.449 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-09-20 16:18:27.450 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-09-20 16:18:27.655 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-09-20 16:18:27.661 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-09-20 16:18:27.665 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-20 16:18:27.671 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1600589907670 with initial instances count: 4
+2020-09-20 16:18:27.675 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status UP
+2020-09-20 16:18:27.676 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1600589907676, current=UP, previous=STARTING]
+2020-09-20 16:18:27.739 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 40002 (http) with context path ''
+2020-09-20 16:18:27.740 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 40002
+2020-09-20 16:18:27.742 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - Started ConsigneeconsignerApplication in 12.399 seconds (JVM running for 13.608)
+2020-09-20 16:18:28.049 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:18:28.094 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:18:28.210 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-20 16:18:28.211 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-20 16:18:28.221 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-09-20 16:23:27.455 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:28:27.461 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:33:27.469 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:33:40.887 [Thread-30] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status DOWN
+2020-09-20 16:33:40.901 [Thread-30] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:33:40.909 [Thread-30] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-20 16:33:40.912 [Thread-30] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-09-20 16:34:27.848 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - The following profiles are active: dev
+2020-09-20 16:34:29.139 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7a90a502-bd22-3cc7-a350-990291bcd0ee
+2020-09-20 16:34:29.261 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb0d96ec] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:34:29.301 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d72799e9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:34:29.541 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 40002 (http)
+2020-09-20 16:34:29.564 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-20 16:34:29.564 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-20 16:34:29.763 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-20 16:34:29.763 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1893 ms
+2020-09-20 16:34:29.882 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:34:29.891 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@418f890f
+2020-09-20 16:34:29.985 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-09-20 16:34:34.348 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-20 16:34:35.064 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:34:35.248 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:34:35.796 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-20 16:34:35.894 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-09-20 16:34:35.931 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-09-20 16:34:36.125 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-09-20 16:34:36.125 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-09-20 16:34:36.245 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-09-20 16:34:36.246 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-09-20 16:34:36.609 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-09-20 16:34:36.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-09-20 16:34:36.629 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-09-20 16:34:36.801 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-09-20 16:34:36.803 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-09-20 16:34:36.805 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-20 16:34:36.809 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1600590876808 with initial instances count: 4
+2020-09-20 16:34:36.812 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status UP
+2020-09-20 16:34:36.812 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1600590876812, current=UP, previous=STARTING]
+2020-09-20 16:34:36.881 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 40002 (http) with context path ''
+2020-09-20 16:34:36.883 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 40002
+2020-09-20 16:34:36.888 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - Started ConsigneeconsignerApplication in 10.498 seconds (JVM running for 11.462)
+2020-09-20 16:34:37.165 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-20 16:34:37.166 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-20 16:34:37.174 [RMI TCP Connection(4)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-09-20 16:34:37.212 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:34:37.236 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:37:13.677 [Thread-26] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status DOWN
+2020-09-20 16:37:13.690 [Thread-26] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:37:13.708 [Thread-26] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-20 16:37:13.711 [Thread-26] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-09-20 16:37:19.623 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - The following profiles are active: dev
+2020-09-20 16:37:20.590 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7a90a502-bd22-3cc7-a350-990291bcd0ee
+2020-09-20 16:37:20.704 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$12d48eb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:37:20.724 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2eee91b1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:37:20.932 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 40002 (http)
+2020-09-20 16:37:20.950 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-20 16:37:20.951 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-20 16:37:21.126 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-20 16:37:21.126 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1486 ms
+2020-09-20 16:37:21.239 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:37:21.247 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5eb0a686
+2020-09-20 16:37:21.332 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-09-20 16:37:26.641 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-20 16:37:27.170 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:37:27.327 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:37:27.865 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-20 16:37:27.964 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-09-20 16:37:27.996 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-09-20 16:37:28.200 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-09-20 16:37:28.200 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-09-20 16:37:28.343 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-09-20 16:37:28.343 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-09-20 16:37:28.568 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-09-20 16:37:28.583 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-09-20 16:37:28.584 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-09-20 16:37:28.743 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-09-20 16:37:28.746 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-09-20 16:37:28.748 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-20 16:37:28.751 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1600591048750 with initial instances count: 4
+2020-09-20 16:37:28.754 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status UP
+2020-09-20 16:37:28.754 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1600591048754, current=UP, previous=STARTING]
+2020-09-20 16:37:28.805 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 40002 (http) with context path ''
+2020-09-20 16:37:28.806 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 40002
+2020-09-20 16:37:28.809 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - Started ConsigneeconsignerApplication in 10.116 seconds (JVM running for 10.775)
+2020-09-20 16:37:29.099 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:37:29.132 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:37:29.252 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-20 16:37:29.252 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-20 16:37:29.258 [RMI TCP Connection(3)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-09-20 16:39:44.451 [Thread-25] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status DOWN
+2020-09-20 16:39:44.476 [Thread-25] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:39:44.494 [Thread-25] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-20 16:39:44.499 [Thread-25] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-09-20 16:39:56.930 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - The following profiles are active: dev
+2020-09-20 16:39:57.825 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7a90a502-bd22-3cc7-a350-990291bcd0ee
+2020-09-20 16:39:57.926 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cef219b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:39:57.950 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$eb0c1cb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-20 16:39:58.190 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 40002 (http)
+2020-09-20 16:39:58.207 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-20 16:39:58.208 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2020-09-20 16:39:58.382 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-09-20 16:39:58.383 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1436 ms
+2020-09-20 16:39:58.497 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:39:58.505 [main] INFO  com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7f5fcfe9
+2020-09-20 16:39:58.595 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-09-20 16:40:02.854 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-09-20 16:40:03.382 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-20 16:40:03.536 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:40:03.981 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-09-20 16:40:04.073 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-09-20 16:40:04.100 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-09-20 16:40:04.258 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-09-20 16:40:04.259 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-09-20 16:40:04.352 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-09-20 16:40:04.352 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-09-20 16:40:04.612 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-09-20 16:40:04.627 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-09-20 16:40:04.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-09-20 16:40:04.775 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-09-20 16:40:04.777 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-09-20 16:40:04.779 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-20 16:40:04.782 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1600591204781 with initial instances count: 4
+2020-09-20 16:40:04.785 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status UP
+2020-09-20 16:40:04.785 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1600591204785, current=UP, previous=STARTING]
+2020-09-20 16:40:04.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 40002 (http) with context path ''
+2020-09-20 16:40:04.832 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 40002
+2020-09-20 16:40:04.835 [main] INFO  c.s.w.c.ConsigneeconsignerApplication - Started ConsigneeconsignerApplication in 8.839 seconds (JVM running for 9.479)
+2020-09-20 16:40:05.083 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-20 16:40:05.083 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-20 16:40:05.091 [RMI TCP Connection(1)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-09-20 16:40:05.131 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002: registering service...
+2020-09-20 16:40:05.155 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_WLTP-FLIGHT-CONSIGNEECONSIGNER/192.168.1.19:40002 - registration status: 204
+2020-09-20 16:42:29.356 [Thread-22] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application WLTP-FLIGHT-CONSIGNEECONSIGNER with eureka with status DOWN
+2020-09-20 16:42:29.402 [Thread-22] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-20 16:42:29.419 [Thread-22] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-09-20 16:42:29.422 [Thread-22] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

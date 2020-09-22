@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sunyo.wlpt.consigneeconsigner.mapper.ConsigneeMapper">
+  <resultMap id="BaseResultMap" type="com.sunyo.wlpt.consigneeconsigner.model.Consignee">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="company_name" jdbcType="VARCHAR" property="companyName" />
+    <result column="con_name" jdbcType="VARCHAR" property="conName" />
+    <result column="con_phone" jdbcType="VARCHAR" property="conPhone" />
+    <result column="con_fax" jdbcType="VARCHAR" property="conFax" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="con_city" jdbcType="VARCHAR" property="conCity" />
+    <result column="con_address" jdbcType="VARCHAR" property="conAddress" />
+    <result column="con_postcode" jdbcType="VARCHAR" property="conPostcode" />
+    <result column="con_aeo" jdbcType="VARCHAR" property="conAeo" />
+    <result column="enterprise" jdbcType="VARCHAR" property="enterprise" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, company_name, con_name, con_phone, con_fax, country, con_city, con_address, con_postcode, 
+    con_aeo, enterprise
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from consignee
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectList" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select
+    *
+    from consignee
+    where 1=1
+    <if test="companyName != null and companyName != ''" >
+      and  company_name like concat('%',#{companyName,jdbcType=VARCHAR},'%')
+    </if>
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from consignee
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.sunyo.wlpt.consigneeconsigner.model.Consignee">
+    insert into consignee (id, company_name, con_name, 
+      con_phone, con_fax, country, 
+      con_city, con_address, con_postcode, 
+      con_aeo, enterprise)
+    values (#{id,jdbcType=INTEGER}, #{companyName,jdbcType=VARCHAR}, #{conName,jdbcType=VARCHAR}, 
+      #{conPhone,jdbcType=VARCHAR}, #{conFax,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR}, 
+      #{conCity,jdbcType=VARCHAR}, #{conAddress,jdbcType=VARCHAR}, #{conPostcode,jdbcType=VARCHAR}, 
+      #{conAeo,jdbcType=VARCHAR}, #{enterprise,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.sunyo.wlpt.consigneeconsigner.model.Consignee">
+    insert into consignee
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="companyName != null">
+        company_name,
+      </if>
+      <if test="conName != null">
+        con_name,
+      </if>
+      <if test="conPhone != null">
+        con_phone,
+      </if>
+      <if test="conFax != null">
+        con_fax,
+      </if>
+      <if test="country != null">
+        country,
+      </if>
+      <if test="conCity != null">
+        con_city,
+      </if>
+      <if test="conAddress != null">
+        con_address,
+      </if>
+      <if test="conPostcode != null">
+        con_postcode,
+      </if>
+      <if test="conAeo != null">
+        con_aeo,
+      </if>
+      <if test="enterprise != null">
+        enterprise,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="companyName != null">
+        #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="conName != null">
+        #{conName,jdbcType=VARCHAR},
+      </if>
+      <if test="conPhone != null">
+        #{conPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="conFax != null">
+        #{conFax,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="conCity != null">
+        #{conCity,jdbcType=VARCHAR},
+      </if>
+      <if test="conAddress != null">
+        #{conAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="conPostcode != null">
+        #{conPostcode,jdbcType=VARCHAR},
+      </if>
+      <if test="conAeo != null">
+        #{conAeo,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprise != null">
+        #{enterprise,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sunyo.wlpt.consigneeconsigner.model.Consignee">
+    update consignee
+    <set>
+      <if test="companyName != null">
+        company_name = #{companyName,jdbcType=VARCHAR},
+      </if>
+      <if test="conName != null">
+        con_name = #{conName,jdbcType=VARCHAR},
+      </if>
+      <if test="conPhone != null">
+        con_phone = #{conPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="conFax != null">
+        con_fax = #{conFax,jdbcType=VARCHAR},
+      </if>
+      <if test="country != null">
+        country = #{country,jdbcType=VARCHAR},
+      </if>
+      <if test="conCity != null">
+        con_city = #{conCity,jdbcType=VARCHAR},
+      </if>
+      <if test="conAddress != null">
+        con_address = #{conAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="conPostcode != null">
+        con_postcode = #{conPostcode,jdbcType=VARCHAR},
+      </if>
+      <if test="conAeo != null">
+        con_aeo = #{conAeo,jdbcType=VARCHAR},
+      </if>
+      <if test="enterprise != null">
+        enterprise = #{enterprise,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sunyo.wlpt.consigneeconsigner.model.Consignee">
+    update consignee
+    set company_name = #{companyName,jdbcType=VARCHAR},
+      con_name = #{conName,jdbcType=VARCHAR},
+      con_phone = #{conPhone,jdbcType=VARCHAR},
+      con_fax = #{conFax,jdbcType=VARCHAR},
+      country = #{country,jdbcType=VARCHAR},
+      con_city = #{conCity,jdbcType=VARCHAR},
+      con_address = #{conAddress,jdbcType=VARCHAR},
+      con_postcode = #{conPostcode,jdbcType=VARCHAR},
+      con_aeo = #{conAeo,jdbcType=VARCHAR},
+      enterprise = #{enterprise,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
